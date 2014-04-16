@@ -13,12 +13,14 @@
             ],
 
             'include_dirs': [
-                '.',
+                '../gtest',
+                '../gtest/include'
             ],
 
             'direct_dependent_settings': {
                 'include_dirs': [
-                    '.'
+                    '../gtest',
+                    '../gtest/include'
                 ],
             },
         },
@@ -30,13 +32,19 @@
                 'src/gtest_main.cc'
             ],
 
+            'dependencies': [
+                'gtest',
+            ],
+            
             'include_dirs': [
-                '.'
+                '../gtest',
+                '../gtest/include'
             ],
 
             'direct_dependent_settings': {
                 'include_dirs': [
-                    '.',
+                    '../gtest',
+                    '../gtest/include'
                 ],
             },
         }
